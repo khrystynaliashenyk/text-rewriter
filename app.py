@@ -395,7 +395,7 @@ if st.session_state.get("result"):
     </div>
     """, unsafe_allow_html=True)
 
-     result = st.session_state["result"]
+    result = st.session_state["result"]
 
     st.text_area(
         "Переписаний текст",
