@@ -390,7 +390,6 @@ if st.session_state.get("result"):
 
     st.markdown("""
     <div class="section-title">
-        <div class="result-label">
              РЕЗУЛЬТАТ
         </div>
     </div>
@@ -398,13 +397,7 @@ if st.session_state.get("result"):
 
     result = st.session_state["result"]
 
-    st.text_area(
-        "Переписаний текст",
-        value=result,
-        height=200,
-        label_visibility="collapsed",
-        key="result_output"
-    )
+    st.code(result, language=None)
 
     st.download_button(
         "Завантажити результат",
@@ -413,4 +406,5 @@ if st.session_state.get("result"):
         mime="text/plain",
         use_container_width=True
     )
+
 
