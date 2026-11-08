@@ -244,7 +244,7 @@ footer {
 st.markdown("""
 <div class="hero">
     <div class="hero-label">
-        AI WRITING ASSISTANT
+        <h1>AI WRITING ASSISTANT</h1>
     </div>
 
    
