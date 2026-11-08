@@ -4,7 +4,6 @@ import requests
 
 st.set_page_config(
     page_title="Text Rewriter",
-    page_icon="✍️",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
@@ -245,30 +244,19 @@ footer {
 st.markdown("""
 <div class="hero">
     <div class="hero-label">
-        ✦ AI WRITING ASSISTANT
+        AI WRITING ASSISTANT
     </div>
 
     <h1>Text Rewriter</h1>
 
-    <p>
-        Твої думки. Нове звучання.<br>
-        Переписуй тексти, змінюй стиль
-        та знаходь правильні слова за допомогою AI.
-    </p>
+   
 </div>
 """, unsafe_allow_html=True)
 
 
 
 st.markdown(
-    '<div class="section-title">01. Твій текст</div>',
-    unsafe_allow_html=True
-)
-
-st.markdown(
-    '<div class="section-description">'
-    'Введи текст, який хочеш переписати.'
-    '</div>',
+    '<div class="section-title">Твій текст</div>',
     unsafe_allow_html=True
 )
 
@@ -287,7 +275,7 @@ with st.form("rewrite_form", border=False):
     )
 
     st.markdown(
-        '<div class="section-title">02. Обери стиль</div>',
+        '<div class="section-title">Обери стиль</div>',
         unsafe_allow_html=True
     )
 
@@ -300,7 +288,7 @@ with st.form("rewrite_form", border=False):
     )
 
     submitted = st.form_submit_button(
-        "✦  Переписати текст",
+        "Переписати текст",
         use_container_width=True
     )
 
@@ -353,7 +341,7 @@ if submitted:
 
         try:
 
-            with st.spinner("✦ Працюємо над твоїм текстом..."):
+            with st.spinner("Працюємо над твоїм текстом..."):
 
                 response = requests.post(
                     "https://api.groq.com/openai/v1/chat/completions",
