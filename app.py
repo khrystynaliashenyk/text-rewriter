@@ -247,8 +247,6 @@ st.markdown("""
         AI WRITING ASSISTANT
     </div>
 
-    <h1>Text Rewriter</h1>
-
    
 </div>
 """, unsafe_allow_html=True)
