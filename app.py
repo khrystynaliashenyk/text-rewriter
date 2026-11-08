@@ -391,11 +391,7 @@ if st.session_state.get("result"):
     st.markdown("""
     <div class="result-card">
         <div class="result-label">
-            ✦ 03. РЕЗУЛЬТАТ
-        </div>
-
-        <div class="result-title">
-            Твій оновлений текст
+             РЕЗУЛЬТАТ
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -411,7 +407,7 @@ if st.session_state.get("result"):
     )
 
     st.download_button(
-        "↓  Завантажити результат",
+        "Завантажити результат",
         data=result,
         file_name="rewritten_text.txt",
         mime="text/plain",
