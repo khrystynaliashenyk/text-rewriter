@@ -395,16 +395,21 @@ if st.session_state.get("result"):
     </div>
     """, unsafe_allow_html=True)
 
-    result = st.session_state["result"]
+     result = st.session_state["result"]
 
-    st.code(result, language=None)
+    st.text_area(
+        "Переписаний текст",
+        value=result,
+        height=200,
+        label_visibility="collapsed",
+        key="result_output"
+    )
 
     st.download_button(
-        "Завантажити результат",
+        "↓  Завантажити результат",
         data=result,
         file_name="rewritten_text.txt",
         mime="text/plain",
         use_container_width=True
     )
-
 
