@@ -244,7 +244,7 @@ footer {
 st.markdown("""
 <div class="hero">
     <div class="hero-label">
-        <h1 text-align: center>AI Text Rewriter</h1>
+        <h1>AI Text Rewriter</h1>
     </div>
 
    
@@ -389,7 +389,7 @@ if submitted:
 if st.session_state.get("result"):
 
     st.markdown("""
-    <div class="result-card">
+    <div class="section-title">
         <div class="result-label">
              РЕЗУЛЬТАТ
         </div>
