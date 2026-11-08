@@ -406,7 +406,7 @@ if st.session_state.get("result"):
     )
 
     st.download_button(
-        "↓  Завантажити результат",
+        "Завантажити результат",
         data=result,
         file_name="rewritten_text.txt",
         mime="text/plain",
